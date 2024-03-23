@@ -1,0 +1,134 @@
+---
+title: Coding Fundamentals for Humanists
+description: |
+  <br>Workshop for the [Digital Humanities Summer Institute](https://dhsi.org/) (DHSI) 2024
+toc: false
+title-block-banner: true
+anchor-sections: false
+---
+
+:::{layout="[[2.1, 10], [2.1, 10], [2.1, 5, 5], [2.1, 10], [2.1, 10]]"}
+
+:::{.card-body}
+
+:::{.date}
+
+Monday<br>June 10, 2024
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Programming fundamentals](/monday/index.qmd){.card-title .stretched-link}
+
+[Introduction to the core concepts of programming languages]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Tuesday<br>June 11, 2024
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Python as an example](/tuesday/index.qmd){.card-title .stretched-link}
+
+[Basics of the language]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Wednesday<br>June 12, 2024
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[API querying](/wednesday_api/index.qmd){.card-title .stretched-link}
+
+[Example of a Python application]{.text-muted}
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[More Python usages](/wednesday_demo/index.qmd){.card-title .stretched-link}
+
+[Hands-off demo]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Thursday<br>June 13, 2024
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Your turn!](/thursday/index.qmd){.card-title .stretched-link}
+
+[Each team will query an API (of course, we are here to help)]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Friday<br>June 14, 2024
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Presentations](/friday/index.qmd){.card-title .stretched-link}
+
+[Totally stress-free presentations of your results and what you learnt]{.text-muted}
+
+:::
+
+:::
+
+:::
