@@ -1,0 +1,28 @@
+---
+title: More Python usages
+description: |
+  Hands-off demo of what Python can do for humanities researchers
+title-block-banner: true
+---
+
+:::{.topdef}
+
+**Date:** \
+Wednesday June 12, 2024
+
+**Time:** \
+9am–noon
+
+**Instructor:** \
+Marie-Hélène Burle (Simon Fraser University)
+
+:::
+<br>
+
+:::{.topinline}
+
+Material:
+
+Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) to take live notes.
+
+:::

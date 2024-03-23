@@ -1,0 +1,28 @@
+---
+title: Python as an example
+description: |
+  Basics of the language
+title-block-banner: true
+---
+
+:::{.topdef}
+
+**Date:** \
+Tuesday June 11, 2024
+
+**Time:** \
+9am–noon, 1pm–4pm
+
+**Instructors:** \
+Marie-Hélène Burle (Simon Fraser University) & Meghan Landry (ACENET)
+
+:::
+<br>
+
+:::{.topinline}
+
+Material:
+
+Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) to take live notes.
+
+:::

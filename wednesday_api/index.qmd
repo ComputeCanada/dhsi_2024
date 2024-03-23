@@ -1,0 +1,28 @@
+---
+title: API querying
+description: |
+  Gathering internet data through APIs
+title-block-banner: true
+---
+
+:::{.topdef}
+
+**Date:** \
+Wednesday June 12, 2024
+
+**Time:** \
+1pm–4pm
+
+**Instructor:** \
+Meghan Landry (ACENET)
+
+:::
+<br>
+
+:::{.topinline}
+
+Material:
+
+Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) to take live notes.
+
+:::

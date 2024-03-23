@@ -1,0 +1,23 @@
+---
+title: Presentations
+description: |
+  Totally stress-free presentations of your results and what you learnt
+title-block-banner: true
+---
+
+:::{.topdef}
+
+**Date:** \
+Friday June 14, 2024
+
+**Time:** \
+9am–10:15am
+
+:::
+<br>
+
+:::{.topinline}
+
+Don't hesitate to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for live comments.
+
+:::

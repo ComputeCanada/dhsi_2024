@@ -1,0 +1,23 @@
+---
+title: Your turn!
+description: |
+  Query an API in teams (of course, we are here to help)
+title-block-banner: true
+---
+
+:::{.topdef}
+
+**Date:** \
+Thursday June 13, 2024
+
+**Time:** \
+9am–noon, 1pm–4pm
+
+:::
+<br>
+
+:::{.topinline}
+
+Don't hesitate to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) to exchange ideas and information.
+
+:::

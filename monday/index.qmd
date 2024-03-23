@@ -1,0 +1,26 @@
+---
+title: Programming fundamentals
+description: |
+  Introduction to the core concepts of programming languages
+title-block-banner: true
+---
+
+:::{.topdef}
+
+**Date:** \
+Monday June 10, 2024
+
+**Time:** \
+10:30am–noon, 1pm–2:30pm
+
+**Instructors:** \
+Marie-Hélène Burle (Simon Fraser University) & Meghan Landry (ACENET)
+
+:::
+<br>
+
+:::{.topinline}
+
+Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for this course to share notes.
+
+:::
