@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="How to automate data extraction from the web with Python">
+<meta name="description" content="Hands-off demo of what Python can do for humanities researchers">
 
-<title>Coding Fundamentals for Humanists - Web scraping</title>
+<title>Coding Fundamentals for Humanists - More Python usages</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,27 +129,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../monday/index.html"> 
-<span class="menu-text">Command line</span></a>
+<span class="menu-text">Monday</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../tuesday/index.html"> 
-<span class="menu-text">Python course</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../wednesday_scraping/index.html" aria-current="page"> 
-<span class="menu-text">Web scraping</span></a>
+<span class="menu-text">Tuesday</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../wednesday_api/index.html"> 
-<span class="menu-text">API querying</span></a>
+<span class="menu-text">Wednesday morning</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../wednesday_scraping/index.html" aria-current="page"> 
+<span class="menu-text">Wednesday afternoon</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../thursday/index.html"> 
-<span class="menu-text">On your own</span></a>
+<span class="menu-text">Thursday</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../friday/index.html"> 
-<span class="menu-text">Presentations</span></a>
+<span class="menu-text">Friday</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -172,10 +172,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Web scraping</h1>
+      <h1 class="title">More Python usages</h1>
                   <div>
         <div class="description">
-          <p>How to automate data extraction from the web with Python</p>
+          <p>Hands-off demo of what Python can do for humanities researchers</p>
         </div>
       </div>
                 </div>
@@ -288,7 +288,7 @@ Marie-Hélène Burle (Simon Fraser University)</p>
 <section id="load-packages" class="level2">
 <h2 class="anchored" data-anchor-id="load-packages">Load packages</h2>
 <p>Let’s load the packages that will make scraping websites with Python easier:</p>
-<div id="46e0c919" class="cell" data-execution_count="1">
+<div id="14c84d1e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests                 <span class="co"># To download the html data from a site</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup   <span class="co"># To parse the html data</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time                     <span class="co"># To add a delay between each requests</span></span>
@@ -299,15 +299,15 @@ Marie-Hélène Burle (Simon Fraser University)</p>
 <h2 class="anchored" data-anchor-id="send-request-to-the-main-site">Send request to the main site</h2>
 <p>As mentioned above, our site is the <a href="https://trace.tennessee.edu/utk_graddiss/index.html">database of PhD dissertations from the University of Tennessee</a>.</p>
 <p>Let’s create a string with the URL:</p>
-<div id="dc5968f8" class="cell" data-execution_count="2">
+<div id="c23e6409" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://trace.tennessee.edu/utk_graddiss/index.html"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>First, we send a request to that URL and save the response in a variable called <code>r</code>:</p>
-<div id="5628a384" class="cell" data-execution_count="3">
+<div id="63e81565" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> requests.get(url)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Let’s see what our response looks like:</p>
-<div id="bf2b9fc8" class="cell" data-execution_count="4">
+<div id="204d25fd" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>&lt;Response [200]&gt;</code></pre>
@@ -319,7 +319,7 @@ Marie-Hélène Burle (Simon Fraser University)</p>
 <h2 class="anchored" data-anchor-id="explore-the-raw-data">Explore the raw data</h2>
 <p>To get the actual content of the response as unicode (text), we can use the <code>text</code> property of the response. This will give us the raw HTML markup from the webpage.</p>
 <p>Let’s print the first 200 characters:</p>
-<div id="006f0751" class="cell" data-execution_count="5">
+<div id="6a3327c5" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(r.text[:<span class="dv">200</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -333,14 +333,14 @@ Marie-Hélène Burle (Simon Fraser University)</p>
 <h2 class="anchored" data-anchor-id="parse-the-data">Parse the data</h2>
 <p>The package <a href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a> transforms (parses) such HTML data into a parse tree, which will make extracting information easier.</p>
 <p>Let’s create an object called <code>mainpage</code> with the parse tree:</p>
-<div id="324597bc" class="cell" data-execution_count="6">
+<div id="8869917c" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>mainpage <span class="op">=</span> BeautifulSoup(r.text, <span class="st">"html.parser"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="note">
 <p><code>html.parser</code> is the name of the parser that we are using here. It is better to use a specific parser to get consistent results across environments.</p>
 </div>
 <p>We can print the beginning of the parsed result:</p>
-<div id="36f735eb" class="cell" data-execution_count="7">
+<div id="a8dde3e0" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mainpage.prettify()[:<span class="dv">200</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -360,7 +360,7 @@ Marie-Hélène Burle (Simon Fraser University)</p>
 <ul>
 <li>using the title tag name:</li>
 </ul>
-<div id="d68a1789" class="cell" data-execution_count="8">
+<div id="82b14a1d" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>mainpage.title</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>&lt;title&gt;
@@ -371,7 +371,7 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <ul>
 <li>using <code>find</code> to look for HTML markers (tags, attributes, etc.):</li>
 </ul>
-<div id="05f3839b" class="cell" data-execution_count="9">
+<div id="9a5d2e7e" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>mainpage.find(<span class="st">"title"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>&lt;title&gt;
@@ -382,7 +382,7 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <ul>
 <li>using <code>select</code> which accepts CSS selectors:</li>
 </ul>
-<div id="02e2b68c" class="cell" data-execution_count="10">
+<div id="c642cb01" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>mainpage.select(<span class="st">"title"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>[&lt;title&gt;
@@ -392,7 +392,7 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 </div>
 <p><code>find</code> will only return the first element. <code>find_all</code> will return all elements. <code>select</code> will also return all elements. Which one you chose depends on what you need to extract. There often several ways to get you there.</p>
 <p>Here are other examples of data extraction:</p>
-<div id="1426ca36" class="cell" data-execution_count="11">
+<div id="d87933f4" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>mainpage.head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>&lt;head&gt;&lt;!-- inj yui3-seed: --&gt;&lt;script src="//cdnjs.cloudflare.com/ajax/libs/yui/3.6.0/yui/yui-min.js" type="text/javascript"&gt;&lt;/script&gt;&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;&lt;!-- Adobe Analytics --&gt;&lt;script src="https://assets.adobedtm.com/4a848ae9611a/d0e96722185b/launch-d525bb0064d8.min.js" type="text/javascript"&gt;&lt;/script&gt;&lt;!-- Cookies --&gt;&lt;link href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" rel="stylesheet" type="text/css"/&gt;&lt;script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" type="text/javascript"&gt;&lt;/script&gt;&lt;script src="/assets/nr_browser_production.js" type="text/javascript"&gt;&lt;/script&gt;
@@ -428,13 +428,13 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 &lt;/head&gt;</code></pre>
 </div>
 </div>
-<div id="52f47edb" class="cell" data-execution_count="12">
+<div id="161a0ade" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>mainpage.a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>&lt;a data-scroll="" href="https://trace.tennessee.edu" title="Home"&gt;Home&lt;/a&gt;</code></pre>
 </div>
 </div>
-<div id="8cfc7d41" class="cell" data-execution_count="13">
+<div id="3d39e5c7" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>mainpage.find_all(<span class="st">"a"</span>)[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>[&lt;a data-scroll="" href="https://trace.tennessee.edu" title="Home"&gt;Home&lt;/a&gt;,
@@ -444,7 +444,7 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
  &lt;a data-scroll="" href="https://trace.tennessee.edu/about.html" title="About"&gt;About&lt;/a&gt;]</code></pre>
 </div>
 </div>
-<div id="79df5578" class="cell" data-execution_count="14">
+<div id="4ad46fbc" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>mainpage.select(<span class="st">"a"</span>)[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>[&lt;a data-scroll="" href="https://trace.tennessee.edu" title="Home"&gt;Home&lt;/a&gt;,
@@ -472,39 +472,39 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <h3 class="anchored" data-anchor-id="extract-test-url">Extract test URL</h3>
 <p>It is a good idea to test things out on a single element before doing a massive batch scraping of a site, so let’s test our method for the first dissertation.</p>
 <p>To start, we need to extract the first URL. Here, we will use the CSS selectors (we can get there using <code>find</code> too). <code>mainpage.select(".article-listing a")</code> would give us all the results (100 links):</p>
-<div id="666af0c6" class="cell" data-execution_count="15">
+<div id="2d8676c3" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(mainpage.select(<span class="st">".article-listing a"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>100</code></pre>
 </div>
 </div>
 <p>To get the first one, we index it:</p>
-<div id="7a801008" class="cell" data-execution_count="16">
+<div id="63b41f0c" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>mainpage.select(<span class="st">".article-listing a"</span>)[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>&lt;a href="https://trace.tennessee.edu/utk_graddiss/8076"&gt;Understanding host-microbe interactions in maize kernel and sweetpotato leaf metagenomic profiles.&lt;/a&gt;</code></pre>
 </div>
 </div>
 <p>The actual URL is contained in the <code>href</code> attribute. Attributes can be extracted with the <code>get</code> method:</p>
-<div id="f929a2a2" class="cell" data-execution_count="17">
+<div id="f984efc6" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>mainpage.select(<span class="st">".article-listing a"</span>)[<span class="dv">0</span>].get(<span class="st">"href"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>'https://trace.tennessee.edu/utk_graddiss/8076'</code></pre>
 </div>
 </div>
 <p>We now have our URL as a string. We can double-check that it is indeed a string:</p>
-<div id="0398b36b" class="cell" data-execution_count="18">
+<div id="ff003397" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(mainpage.select(<span class="st">".article-listing a"</span>)[<span class="dv">0</span>].get(<span class="st">"href"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>str</code></pre>
 </div>
 </div>
 <p>This is exactly what we need to send a request to that site, so let’s create an object <code>url_test</code> with it:</p>
-<div id="af7ccf1f" class="cell" data-execution_count="19">
+<div id="d529147f" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>url_test <span class="op">=</span> mainpage.select(<span class="st">".article-listing a"</span>)[<span class="dv">0</span>].get(<span class="st">"href"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We have our first thesis URL:</p>
-<div id="3caf78ec" class="cell" data-execution_count="20">
+<div id="9cbb3b2e" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(url_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>https://trace.tennessee.edu/utk_graddiss/8076</code></pre>
@@ -515,11 +515,11 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <h3 class="anchored" data-anchor-id="send-request-to-test-url">Send request to test URL</h3>
 <p>Now that we have the URL for the first dissertation information page, we want to extract the date, major, and advisor for that dissertation.</p>
 <p>The first thing to do—as we did earlier with the database site—is to send a request to that page. Let’s assign it to a new object that we will call <code>r_test</code>:</p>
-<div id="1e938a2f" class="cell" data-execution_count="21">
+<div id="45f56acc" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>r_test <span class="op">=</span> requests.get(url_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then we can parse it with Beautiful Soup (as we did before). Let’s create a <code>dissertpage_test</code> object:</p>
-<div id="20a91168" class="cell" data-execution_count="22">
+<div id="af57e964" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>dissertpage_test <span class="op">=</span> BeautifulSoup(r_test.content, <span class="st">"html.parser"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -528,28 +528,28 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <p>It is time to extract the publication date, major, and advisor for our test URL.</p>
 <p>Let’s start with the date. Thanks to the <a href="https://selectorgadget.com/">SelectorGadget</a>, following <a href="#identify-the-relevant-html-markers">the method we saw earlier</a>, we can see that we now need elements marked by <code>#publication_date p</code>.</p>
 <p>We can use <code>select</code> as we did earlier:</p>
-<div id="e105b0d4" class="cell" data-execution_count="23">
+<div id="3d42a745" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>dissertpage_test.select(<span class="st">"#publication_date p"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="23">
 <pre><code>[&lt;p&gt;5-2023&lt;/p&gt;]</code></pre>
 </div>
 </div>
 <p>Notice the square brackets around our result: this is import. It shows us that we have a ResultSet (a list of results specific to Beautiful Soup). This is because <code>select</code> returns all the results. Here, we have a single result, but the format is still list-like. Before we can go further, we need to index the value out of it:</p>
-<div id="35866822" class="cell" data-execution_count="24">
+<div id="d10efc85" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>dissertpage_test.select(<span class="st">"#publication_date p"</span>)[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <pre><code>&lt;p&gt;5-2023&lt;/p&gt;</code></pre>
 </div>
 </div>
 <p>We can now get the text out of this paragraph with the <code>text</code> attribute:</p>
-<div id="c38045ec" class="cell" data-execution_count="25">
+<div id="0a1d5a50" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>dissertpage_test.select(<span class="st">"#publication_date p"</span>)[<span class="dv">0</span>].text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="25">
 <pre><code>'5-2023'</code></pre>
 </div>
 </div>
 <p>We could save it in a variable <code>date_test</code>:</p>
-<div id="46d1153e" class="cell" data-execution_count="26">
+<div id="4f9cc370" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>date_test <span class="op">=</span> dissertpage_test.select(<span class="st">"#publication_date p"</span>)[<span class="dv">0</span>].text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="exo">
@@ -566,19 +566,19 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <section id="extract-all-urls" class="level3">
 <h3 class="anchored" data-anchor-id="extract-all-urls">Extract all URLs</h3>
 <p>We already know how to get the 100 dissertations links from the main page: <code>mainpage.select(".article-listing a")</code>. Let’s assign it to a variable:</p>
-<div id="8802e149" class="cell" data-execution_count="27">
+<div id="50a5dbf3" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>dissertlinks <span class="op">=</span> mainpage.select(<span class="st">".article-listing a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This ResultSet is an <a href="https://docs.python.org/3/glossary.html#term-iterable">iterable</a>, meaning that it can be used in a loop.</p>
 <p>Let’s write a loop to extract all the URLs from this ResultSet of links:</p>
-<div id="f6e0afa2" class="cell" data-execution_count="28">
+<div id="6700bb81" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>urls <span class="op">=</span> []  <span class="co"># We create an empty list before filling it during the loop</span></span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> link <span class="kw">in</span> dissertlinks:</span>
 <span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>    urls.append(link.get(<span class="st">"href"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Let’s see our first 5 URLs:</p>
-<div id="45c347f6" class="cell" data-execution_count="29">
+<div id="4763fa78" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>urls[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="29">
 <pre><code>['https://trace.tennessee.edu/utk_graddiss/8076',
@@ -592,7 +592,7 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <section id="extract-data-from-each-page" class="level3">
 <h3 class="anchored" data-anchor-id="extract-data-from-each-page">Extract data from each page</h3>
 <p>For each element of <code>urls</code> (i.e.&nbsp;for each dissertation URL), we can now get our information.</p>
-<div id="cf89c99c" class="cell" data-execution_count="30">
+<div id="9338f39f" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>ls <span class="op">=</span> []                                            <span class="co"># Create an empty list</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> url <span class="kw">in</span> urls:                                   <span class="co"># For each element of our list of sites</span></span>
@@ -613,14 +613,14 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <h2 class="anchored" data-anchor-id="store-results-in-dataframe">Store results in DataFrame</h2>
 <p>A DataFrame would be a lot more convenient than a list to hold our results.</p>
 <p>First, we create a list with the column names for our future DataFrame:</p>
-<div id="eb5b3c93" class="cell" data-execution_count="31">
+<div id="2b450eec" class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">"Date"</span>, <span class="st">"Major"</span>, <span class="st">"Advisor"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then we create our DataFrame:</p>
-<div id="15342cc0" class="cell" data-execution_count="32">
+<div id="48ad670f" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(ls, columns<span class="op">=</span>cols)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="f805cdd9" class="cell" data-execution_count="33">
+<div id="9febadba" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="33">
 <div>
@@ -715,7 +715,7 @@ Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville
 <section id="save-results-to-file" class="level2">
 <h2 class="anchored" data-anchor-id="save-results-to-file">Save results to file</h2>
 <p>As a final step, we will save our data to a CSV file:</p>
-<div id="077263a3" class="cell" data-execution_count="34">
+<div id="533cc7fe" class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'dissertations_data.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="note">

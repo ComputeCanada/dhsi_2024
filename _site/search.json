@@ -16,7 +16,7 @@
   {
     "objectID": "friday/index.html",
     "href": "friday/index.html",
-    "title": "Project presentations",
+    "title": "Presentations",
     "section": "",
     "text": "Date:\nFriday June 14, 2024\nTime:\n9am–10:15am\n\n\n\nDon’t hesitate to use the etherpad for live comments."
   },
@@ -25,21 +25,21 @@
     "href": "index.html",
     "title": "Coding Fundamentals for Humanists",
     "section": "",
-    "text": "MondayJune 10, 2024\n\n\n\n\nUsing the command line\nA brief introduction to Bash and the Unix shell\n\n\n\n\n\n\nTuesdayJune 11, 2024\n\n\n\n\nPython course\nBasics of the language\n\n\n\n\n\n\nWednesdayJune 12, 2024\n\n\n\n\nWeb scraping\nHow to automate data extraction from the web with Python\n\n\n\n\nAPI querying\nGathering internet data through APIs\n\n\n\n\n\n\nThursdayJune 13, 2024\n\n\n\n\nOn your own!\nA day to work on your projects (of course, we are here to help)\n\n\n\n\n\n\nFridayJune 14, 2024\n\n\n\n\nProject presentations\nTotally stress-free and casual presentations of your projects and what you learnt"
+    "text": "MondayJune 10, 2024\n\n\n\n\nProgramming fundamentals\nIntroduction to the core concepts of programming languages\n\n\n\n\n\n\nTuesdayJune 11, 2024\n\n\n\n\nPython as an example\nBasics of the language\n\n\n\n\n\n\nWednesdayJune 12, 2024\n\n\n\n\nAPI querying\nExample of a Python application\n\n\n\n\nMore Python usages\nHands-off demo\n\n\n\n\n\n\nThursdayJune 13, 2024\n\n\n\n\nYour turn!\nEach team will query an API (of course, we are here to help)\n\n\n\n\n\n\nFridayJune 14, 2024\n\n\n\n\nPresentations\nTotally stress-free presentations of your results and what you learnt"
   },
   {
     "objectID": "monday/index.html",
     "href": "monday/index.html",
-    "title": "Using the command line",
+    "title": "Programming fundamentals",
     "section": "",
-    "text": "Date:\nMonday June 10, 2024\nTime:\n10:30am–noon, 1pm–2:30pm\nInstructor:\nMeghan Landry (ACENET)\n\n\n\nMaterial:\n\nEtherpad"
+    "text": "Date:\nMonday June 10, 2024\nTime:\n10:30am–noon, 1pm–2:30pm\nInstructors:\nMarie-Hélène Burle (Simon Fraser University) & Meghan Landry (ACENET)\n\n\n\nFeel free to use the etherpad for this course to share notes."
   },
   {
     "objectID": "thursday/index.html",
     "href": "thursday/index.html",
-    "title": "On your own!",
+    "title": "Your turn!",
     "section": "",
-    "text": "Date:\nThursday June 13, 2024\nTime:\n9am–noon, 1pm–4pm\n\n\n\nDon’t hesitate to use the etherpad for live comments."
+    "text": "Date:\nThursday June 13, 2024\nTime:\n9am–noon, 1pm–4pm\n\n\n\nDon’t hesitate to use the etherpad to exchange ideas and information."
   },
   {
     "objectID": "tuesday/collections.html",
@@ -184,12 +184,9 @@
   {
     "objectID": "tuesday/index.html",
     "href": "tuesday/index.html",
-    "title": "Python course",
+    "title": "Python as an example",
     "section": "",
-    "text": "Date:\nTuesday June 11, 2024\nTime:\n9am–noon, 1pm–4pm\nInstructors:\nMarie-Hélène Burle (Simon Fraser University) & Meghan Landry (ACENET)\n\n Start the afternoon session here ➤",
-    "crumbs": [
-      "Python course"
-    ]
+    "text": "Date:\nTuesday June 11, 2024\nTime:\n9am–noon, 1pm–4pm\nInstructors:\nMarie-Hélène Burle (Simon Fraser University) & Meghan Landry (ACENET)\n\n\n\nMaterial:\nFeel free to use the etherpad to take live notes."
   },
   {
     "objectID": "tuesday/pandas.html",
@@ -238,26 +235,26 @@
     "href": "wednesday_api/index.html",
     "title": "API querying",
     "section": "",
-    "text": "Date:\nWednesday June 12, 2024\nTime:\n1pm–4pm\nInstructor:\nMeghan Landry (ACENET)\n\n\n\nMaterial:\n\nEtherpad"
+    "text": "Date:\nWednesday June 12, 2024\nTime:\n1pm–4pm\nInstructor:\nMeghan Landry (ACENET)\n\n\n\nMaterial:\nFeel free to use the etherpad to take live notes."
   },
   {
     "objectID": "wednesday_scraping/index.html",
     "href": "wednesday_scraping/index.html",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "",
     "text": "Date:\nWednesday June 12, 2024\nTime:\n9am–noon\nInstructor:\nMarie-Hélène Burle (Simon Fraser University)\nThe internet is a trove of information. A lot of it is publicly available and thus suitable for use in research. Extracting that information and putting it in an organized format for analysis can however, be extremely tedious.\nWeb scraping tools allow to automate parts of that process and Python is a popular language for the task.\nIn this workshop, I will guide you through a simple example using the package Beautiful Soup."
   },
   {
     "objectID": "wednesday_scraping/index.html#html-and-css",
     "href": "wednesday_scraping/index.html#html-and-css",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "HTML and CSS",
     "text": "HTML and CSS\nHyperText Markup Language (HTML) is the standard markup language for websites: it encodes the information related to the formatting and structure of webpages. Additionally, some of the customization can be stored in Cascading Style Sheets (CSS) files.\nHTML uses tags of the form:\n&lt;some_tag&gt;Your content&lt;/some_tag&gt;\nSome tags have attributes:\n&lt;some_tag attribute_name=\"attribute value\"&gt;Your content&lt;/some_tag&gt;\n\nExamples:\n\nSite structure:\n\n&lt;h2&gt;This is a heading of level 2&lt;/h2&gt;\n&lt;p&gt;This is a paragraph&lt;/p&gt;\n\nFormatting:\n\n&lt;b&gt;This is bold&lt;/b&gt;\n&lt;a href=\"https://some.url\"&gt;This is the text for a link&lt;/a&gt;"
   },
   {
     "objectID": "wednesday_scraping/index.html#web-scrapping",
     "href": "wednesday_scraping/index.html#web-scrapping",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Web scrapping",
     "text": "Web scrapping\nWeb scraping is a general term for a set of tools which allow for the extraction of data from the web automatically.\nWhile most of the data on the internet is publicly available, it is illegal to scrape some sites and you should always look into the policy of a site before attempting to scrape it. Some sites will also block you if you submit too many requests in a short amount of time, so remember to scrape responsibly."
   },
@@ -271,14 +268,14 @@
   {
     "objectID": "wednesday_scraping/index.html#lets-look-at-the-sites",
     "href": "wednesday_scraping/index.html#lets-look-at-the-sites",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Let’s look at the sites",
     "text": "Let’s look at the sites\nFirst of all, let’s have a close look at the websites we want to scrape to think carefully about what we want to do. Before starting to write code, it is always a good idea to think about what you are trying to achieve with your code.\nTo create a dataframe with the data for all the dissertations on that first page, we need to do two things:\n\nStep 1: from the dissertations database first page, we want to scrape the list of URLs for the dissertation pages.\nStep 2: once we have the URLs, we want to scrape those pages too to get the date, major, and advisor for each dissertation."
   },
   {
     "objectID": "wednesday_scraping/index.html#load-packages",
     "href": "wednesday_scraping/index.html#load-packages",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Load packages",
     "text": "Load packages\nLet’s load the packages that will make scraping websites with Python easier:\n\nimport requests                 # To download the html data from a site\nfrom bs4 import BeautifulSoup   # To parse the html data\nimport time                     # To add a delay between each requests\nimport pandas as pd             # To store our data in a DataFrame"
   },
@@ -292,21 +289,21 @@
   {
     "objectID": "wednesday_scraping/index.html#explore-the-raw-data",
     "href": "wednesday_scraping/index.html#explore-the-raw-data",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Explore the raw data",
     "text": "Explore the raw data\nTo get the actual content of the response as unicode (text), we can use the text property of the response. This will give us the raw HTML markup from the webpage.\nLet’s print the first 200 characters:\n\nprint(r.text[:200])\n\n\n&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n&lt;head&gt;&lt;!-- inj yui3-seed: --&gt;&lt;script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/yui/3.6.0/yui/yui-min.js'&gt;&lt;/script&gt;&lt;script type='text/javascript' sr"
   },
   {
     "objectID": "wednesday_scraping/index.html#parse-the-data",
     "href": "wednesday_scraping/index.html#parse-the-data",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Parse the data",
     "text": "Parse the data\nThe package Beautiful Soup transforms (parses) such HTML data into a parse tree, which will make extracting information easier.\nLet’s create an object called mainpage with the parse tree:\n\nmainpage = BeautifulSoup(r.text, \"html.parser\")\n\n\nhtml.parser is the name of the parser that we are using here. It is better to use a specific parser to get consistent results across environments.\n\nWe can print the beginning of the parsed result:\n\nprint(mainpage.prettify()[:200])\n\n&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n &lt;head&gt;\n  &lt;!-- inj yui3-seed: --&gt;\n  &lt;script src=\"//cdnjs.cloudflare.com/ajax/libs/yui/3.6.0/yui/yui-min.js\" type=\"text/javascript\"&gt;\n  &lt;/script&gt;\n  &lt;script src=\"//ajax.g\n\n\n\nThe prettify method turns the BeautifulSoup object we created into a string (which is needed for slicing).\n\nIt doesn’t look any more clear to us, but it is now in a format the Beautiful Soup package can work with.\nFor instance, we can get the HTML segment containing the title with three methods:\n\nusing the title tag name:\n\n\nmainpage.title\n\n&lt;title&gt;\nDoctoral Dissertations | Graduate School | University of Tennessee, Knoxville\n&lt;/title&gt;\n\n\n\nusing find to look for HTML markers (tags, attributes, etc.):\n\n\nmainpage.find(\"title\")\n\n&lt;title&gt;\nDoctoral Dissertations | Graduate School | University of Tennessee, Knoxville\n&lt;/title&gt;\n\n\n\nusing select which accepts CSS selectors:\n\n\nmainpage.select(\"title\")\n\n[&lt;title&gt;\n Doctoral Dissertations | Graduate School | University of Tennessee, Knoxville\n &lt;/title&gt;]\n\n\nfind will only return the first element. find_all will return all elements. select will also return all elements. Which one you chose depends on what you need to extract. There often several ways to get you there.\nHere are other examples of data extraction:\n\nmainpage.head\n\n&lt;head&gt;&lt;!-- inj yui3-seed: --&gt;&lt;script src=\"//cdnjs.cloudflare.com/ajax/libs/yui/3.6.0/yui/yui-min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;&lt;script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;&lt;!-- Adobe Analytics --&gt;&lt;script src=\"https://assets.adobedtm.com/4a848ae9611a/d0e96722185b/launch-d525bb0064d8.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;&lt;!-- Cookies --&gt;&lt;link href=\"//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css\" rel=\"stylesheet\" type=\"text/css\"/&gt;&lt;script src=\"//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js\" type=\"text/javascript\"&gt;&lt;/script&gt;&lt;script src=\"/assets/nr_browser_production.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n&lt;!-- def.1 --&gt;\n&lt;meta charset=\"utf-8\"/&gt;\n&lt;meta content=\"width=device-width\" name=\"viewport\"/&gt;\n&lt;title&gt;\nDoctoral Dissertations | Graduate School | University of Tennessee, Knoxville\n&lt;/title&gt;\n&lt;!-- FILE meta-tags.inc --&gt;&lt;!-- FILE: /srv/sequoia/main/data/assets/site/meta-tags.inc --&gt;\n&lt;!-- FILE: meta-tags.inc (cont) --&gt;\n&lt;!-- sh.1 --&gt;\n&lt;link href=\"/ir-style.css\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\"/&gt;\n&lt;link href=\"/ir-custom.css\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\"/&gt;\n&lt;link href=\"ir-custom.css\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\"/&gt;\n&lt;link href=\"/ir-local.css\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\"/&gt;\n&lt;link href=\"ir-local.css\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\"/&gt;\n&lt;link href=\"/ir-print.css\" media=\"print\" rel=\"stylesheet\" type=\"text/css\"/&gt;\n&lt;link href=\"/assets/floatbox/floatbox.css\" rel=\"stylesheet\" type=\"text/css\"/&gt;\n&lt;link href=\"/recent.rss\" rel=\"alternate\" title=\"Site Feed\" type=\"application/rss+xml\"/&gt;\n&lt;link href=\"/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\"/&gt;\n&lt;!--[if IE]&gt;\n&lt;link rel=\"stylesheet\" href=\"/ir-ie.css\" type=\"text/css\" media=\"screen\"&gt;\n&lt;![endif]--&gt;\n&lt;!-- JS --&gt;\n&lt;script src=\"/assets/jsUtilities.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n&lt;script src=\"/assets/footnoteLinks.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n&lt;script src=\"/assets/scripts/yui-init.pack.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n&lt;script src=\"/assets/scripts/bepress-init.pack.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n&lt;script src=\"/assets/scripts/JumpListYUI.pack.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\n&lt;!-- end sh.1 --&gt;\n&lt;script type=\"text/javascript\"&gt;var pageData = {\"page\":{\"environment\":\"prod\",\"productName\":\"bpdg\",\"language\":\"en\",\"name\":\"ir_etd\",\"businessUnit\":\"els:rp:st\"},\"visitor\":{}};&lt;/script&gt;\n&lt;/head&gt;\n\n\n\nmainpage.a\n\n&lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu\" title=\"Home\"&gt;Home&lt;/a&gt;\n\n\n\nmainpage.find_all(\"a\")[:5]\n\n[&lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu\" title=\"Home\"&gt;Home&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu/do/search/advanced/\" title=\"Search\"&gt;&lt;i class=\"icon-search\"&gt;&lt;/i&gt; Search&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu/communities.html\" title=\"Browse\"&gt;Browse Collections&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"/cgi/myaccount.cgi?context=utk_graddiss\" title=\"My Account\"&gt;My Account&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu/about.html\" title=\"About\"&gt;About&lt;/a&gt;]\n\n\n\nmainpage.select(\"a\")[:5]\n\n[&lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu\" title=\"Home\"&gt;Home&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu/do/search/advanced/\" title=\"Search\"&gt;&lt;i class=\"icon-search\"&gt;&lt;/i&gt; Search&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu/communities.html\" title=\"Browse\"&gt;Browse Collections&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"/cgi/myaccount.cgi?context=utk_graddiss\" title=\"My Account\"&gt;My Account&lt;/a&gt;,\n &lt;a data-scroll=\"\" href=\"https://trace.tennessee.edu/about.html\" title=\"About\"&gt;About&lt;/a&gt;]"
   },
   {
     "objectID": "wednesday_scraping/index.html#test-run",
     "href": "wednesday_scraping/index.html#test-run",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Test run",
     "text": "Test run\n\nIdentify relevant markers\nThe html code for this webpage contains the data we are interested in, but it is mixed in with a lot of HTML formatting and data we don’t care about. We need to extract the data relevant to us and turn it into a workable format.\nThe first step is to find the HTML markers that contain our data. One option is to use a web inspector or—even easier—the SelectorGadget, a JavaScript bookmarklet built by Andrew Cantino.\nTo use this tool, go to the SelectorGadget website and drag the link of the bookmarklet to your bookmarks bar.\nNow, go to the dissertations database first page and click on the bookmarklet in your bookmarks bar. You will see a floating box at the bottom of your screen. As you move your mouse across the screen, an orange rectangle appears around each element over which you pass.\nClick on one of the dissertation links: now, there is an a appearing in the box at the bottom as well as the number of elements selected. The selected elements are highlighted in yellow. Those elements are links (in HTML, a tags define hyperlinks).\nAs you can see, all the links we want are selected. However, there are many other links we don’t want that are also highlighted. In fact, all links in the document are selected. We need to remove the categories of links that we don’t want. To do this, hover above any of the links we don’t want. You will see a red rectangle around it. Click on it: now all similar links are gone. You might have to do this a few times until only the relevant links (i.e. those that lead to the dissertation information pages) remain highlighted.\nAs there are 100 such links per page, the count of selected elements in the bottom floating box should be down to 100.\nIn the main section of the floating box, you can now see: .article-listing a. This means that the data we want are under the HTML elements .article-listing a (the class .article-listing and the tag a).\n\n\nExtract test URL\nIt is a good idea to test things out on a single element before doing a massive batch scraping of a site, so let’s test our method for the first dissertation.\nTo start, we need to extract the first URL. Here, we will use the CSS selectors (we can get there using find too). mainpage.select(\".article-listing a\") would give us all the results (100 links):\n\nlen(mainpage.select(\".article-listing a\"))\n\n100\n\n\nTo get the first one, we index it:\n\nmainpage.select(\".article-listing a\")[0]\n\n&lt;a href=\"https://trace.tennessee.edu/utk_graddiss/8076\"&gt;Understanding host-microbe interactions in maize kernel and sweetpotato leaf metagenomic profiles.&lt;/a&gt;\n\n\nThe actual URL is contained in the href attribute. Attributes can be extracted with the get method:\n\nmainpage.select(\".article-listing a\")[0].get(\"href\")\n\n'https://trace.tennessee.edu/utk_graddiss/8076'\n\n\nWe now have our URL as a string. We can double-check that it is indeed a string:\n\ntype(mainpage.select(\".article-listing a\")[0].get(\"href\"))\n\nstr\n\n\nThis is exactly what we need to send a request to that site, so let’s create an object url_test with it:\n\nurl_test = mainpage.select(\".article-listing a\")[0].get(\"href\")\n\nWe have our first thesis URL:\n\nprint(url_test)\n\nhttps://trace.tennessee.edu/utk_graddiss/8076\n\n\n\n\nSend request to test URL\nNow that we have the URL for the first dissertation information page, we want to extract the date, major, and advisor for that dissertation.\nThe first thing to do—as we did earlier with the database site—is to send a request to that page. Let’s assign it to a new object that we will call r_test:\n\nr_test = requests.get(url_test)\n\nThen we can parse it with Beautiful Soup (as we did before). Let’s create a dissertpage_test object:\n\ndissertpage_test = BeautifulSoup(r_test.content, \"html.parser\")\n\n\n\nGet data for test URL\nIt is time to extract the publication date, major, and advisor for our test URL.\nLet’s start with the date. Thanks to the SelectorGadget, following the method we saw earlier, we can see that we now need elements marked by #publication_date p.\nWe can use select as we did earlier:\n\ndissertpage_test.select(\"#publication_date p\")\n\n[&lt;p&gt;5-2023&lt;/p&gt;]\n\n\nNotice the square brackets around our result: this is import. It shows us that we have a ResultSet (a list of results specific to Beautiful Soup). This is because select returns all the results. Here, we have a single result, but the format is still list-like. Before we can go further, we need to index the value out of it:\n\ndissertpage_test.select(\"#publication_date p\")[0]\n\n&lt;p&gt;5-2023&lt;/p&gt;\n\n\nWe can now get the text out of this paragraph with the text attribute:\n\ndissertpage_test.select(\"#publication_date p\")[0].text\n\n'5-2023'\n\n\nWe could save it in a variable date_test:\n\ndate_test = dissertpage_test.select(\"#publication_date p\")[0].text\n\n\n\nYour turn:\n\nGet the major and advisor for our test URL."
   },
@@ -327,21 +324,21 @@
   {
     "objectID": "wednesday_scraping/index.html#full-run",
     "href": "wednesday_scraping/index.html#full-run",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Full run",
     "text": "Full run\nOnce everything is working for a test site, we can do some bulk scraping.\n\nExtract all URLs\nWe already know how to get the 100 dissertations links from the main page: mainpage.select(\".article-listing a\"). Let’s assign it to a variable:\n\ndissertlinks = mainpage.select(\".article-listing a\")\n\nThis ResultSet is an iterable, meaning that it can be used in a loop.\nLet’s write a loop to extract all the URLs from this ResultSet of links:\n\nurls = []  # We create an empty list before filling it during the loop\n\nfor link in dissertlinks:\n    urls.append(link.get(\"href\"))\n\nLet’s see our first 5 URLs:\n\nurls[:5]\n\n['https://trace.tennessee.edu/utk_graddiss/8076',\n 'https://trace.tennessee.edu/utk_graddiss/9158',\n 'https://trace.tennessee.edu/utk_graddiss/8080',\n 'https://trace.tennessee.edu/utk_graddiss/8086',\n 'https://trace.tennessee.edu/utk_graddiss/8078']\n\n\n\n\nExtract data from each page\nFor each element of urls (i.e. for each dissertation URL), we can now get our information.\n\nls = []                                            # Create an empty list\n\nfor url in urls:                                   # For each element of our list of sites\n    r = requests.get(url)                                     # Send a request to the site\n    dissertpage = BeautifulSoup(r.text, \"html.parser\")        # Parse the result\n    date = dissertpage.select(\"#publication_date p\")[0].text  # Get the date\n    major = dissertpage.select(\"#department p\")[0].text       # Get the major\n    advisor = dissertpage.select(\"#advisor1 p\")[0].text            # Get the advisor\n    ls.append((date, major, advisor))                              # Store the results in the list\n    time.sleep(0.1)                                           # Add a delay at each iteration\n\n\nSome sites will block requests if they are too frequent. Adding a little delay between requests is often a good idea."
   },
   {
     "objectID": "wednesday_scraping/index.html#send-request-to-the-main-site",
     "href": "wednesday_scraping/index.html#send-request-to-the-main-site",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Send request to the main site",
     "text": "Send request to the main site\nAs mentioned above, our site is the database of PhD dissertations from the University of Tennessee.\nLet’s create a string with the URL:\n\nurl = \"https://trace.tennessee.edu/utk_graddiss/index.html\"\n\nFirst, we send a request to that URL and save the response in a variable called r:\n\nr = requests.get(url)\n\nLet’s see what our response looks like:\n\nr\n\n&lt;Response [200]&gt;\n\n\nIf you look in the list of HTTP status codes, you can see that a response with a code of 200 means that the request was successful."
   },
   {
     "objectID": "wednesday_scraping/index.html#store-results-in-dataframe",
     "href": "wednesday_scraping/index.html#store-results-in-dataframe",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Store results in DataFrame",
     "text": "Store results in DataFrame\nA DataFrame would be a lot more convenient than a list to hold our results.\nFirst, we create a list with the column names for our future DataFrame:\n\ncols = [\"Date\", \"Major\", \"Advisor\"]\n\nThen we create our DataFrame:\n\ndf = pd.DataFrame(ls, columns=cols)\n\n\ndf\n\n\n\n\n\n\n\n\n\nDate\nMajor\nAdvisor\n\n\n\n\n0\n5-2023\nLife Sciences\nBode A. Olukolu\n\n\n1\n12-2023\nIndustrial Engineering\nHugh Medal\n\n\n2\n5-2023\nNuclear Engineering\nErik Lukosi\n\n\n3\n5-2023\nEnergy Science and Engineering\nKyle R. Gluesenkamp\n\n\n4\n5-2023\nEnglish\nMargaret Lazarus Dean\n\n\n...\n...\n...\n...\n\n\n95\n8-2023\nEducational Psychology and Research\nQi Sun\n\n\n96\n12-2023\nNuclear Engineering\nLawrence H. Heilbronn\n\n\n97\n5-2023\nGeology\nBradley Thomson\n\n\n98\n5-2023\nNatural Resources\nSharon R. Jean-Philippe\n\n\n99\n12-2023\nPsychology\nGreg Stuart\n\n\n\n\n100 rows × 3 columns"
   },
@@ -355,15 +352,22 @@
   {
     "objectID": "wednesday_scraping/index.html#example-for-this-workshop",
     "href": "wednesday_scraping/index.html#example-for-this-workshop",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Example for this workshop",
     "text": "Example for this workshop\nWe will use a website from the University of Tennessee containing a database of PhD theses from that university.\nOur goal is to scrape data from this site to produce a dataframe with the date, major, and advisor for each dissertation.\n\nWe will only do this for the first page which contains the links to the 100 most recent theses. If you really wanted to gather all the data, you would have to do this for all pages."
   },
   {
     "objectID": "wednesday_scraping/index.html#save-results-to-file",
     "href": "wednesday_scraping/index.html#save-results-to-file",
-    "title": "Web scraping",
+    "title": "More Python usages",
     "section": "Save results to file",
     "text": "Save results to file\nAs a final step, we will save our data to a CSV file:\n\ndf.to_csv('dissertations_data.csv', index=False)\n\n\nThe default index=True writes the row numbers. We are not writing these indices in our file by changing the value of this argument to False.\n\nIf you are using a Jupyter notebook or the IPython shell, you can type !ls to see that the file is there and !cat dissertations_data.csv to print its content.\n\n! is a magic command that allows to run Unix shell commands in a notebook or IPython shell."
+  },
+  {
+    "objectID": "wednesday_demo/index.html",
+    "href": "wednesday_demo/index.html",
+    "title": "More Python usages",
+    "section": "",
+    "text": "Date:\nWednesday June 12, 2024\nTime:\n9am–noon\nInstructor:\nMarie-Hélène Burle (Simon Fraser University)\n\n\n\nMaterial:\nFeel free to use the etherpad to take live notes."
   }
 ]
