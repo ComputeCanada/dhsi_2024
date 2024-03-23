@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+$link-color: #39729E;
+// $link-color: #557ac3;
+$text-muted: #6a737b;
+// $text-muted: #5d6da2;
+$font-family-monospace: 'Source Code Pro', 'Lucida Console', monospace;
+
+/*-- scss:rules --*/
+
+.layout-example {
+  background: $gray-500;
+  color: $white;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: $font-family-monospace;
+  font-size: .875em;
+  font-weight: 600;
+  padding-top: 1em;
+  border-radius: 3px;
+}
+
+.left {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.right {
+  text-align: right;
+  padding-right: 1em;
+}
