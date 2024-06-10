@@ -11,18 +11,15 @@ title-block-banner: true
 Wednesday June 12, 2024
 
 **Time:** \
-1pm–4pm
+9am–noon
 
 **Instructor:** \
 Meghan Landry (ACENET)
 
 :::
-<br>
 
-:::{.topinline}
+:::{.note}
 
-Material:
-
-Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) to take live notes.
+Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for this course to share notes or communicate among each other. It is entirely for you, so you can use it however you want.
 
 :::

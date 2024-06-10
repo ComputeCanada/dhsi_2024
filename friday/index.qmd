@@ -14,10 +14,9 @@ Friday June 14, 2024
 9am–10:15am
 
 :::
-<br>
 
-:::{.topinline}
+:::{.note}
 
-Don't hesitate to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for live comments.
+Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for this course to share notes or communicate among each other. It is entirely for you, so you can use it however you want.
 
 :::
