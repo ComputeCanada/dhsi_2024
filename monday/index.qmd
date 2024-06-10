@@ -17,10 +17,11 @@ Monday June 10, 2024
 Marie-Hélène Burle (Simon Fraser University) & Meghan Landry (ACENET)
 
 :::
-<br>
 
-:::{.topinline}
+:::{.note}
 
-Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for this course to share notes.
+Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for this course to share notes or communicate among each other. It is entirely for you, so you can use it however you want.
 
 :::
+
+You can find the slides for the afternoon presentation [here](https://docs.google.com/presentation/d/1T125kO_Y33Q4LpDNbcpY0G-tWj_-AN4Rj7diF-jRv3o/edit?usp=sharing).
