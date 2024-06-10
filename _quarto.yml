@@ -8,7 +8,7 @@ project:
 
 website:
   title: Coding Fundamentals for Humanists
-  favicon: /img/dhsi_logo.png
+  favicon: /img/logo_dhsi.png
   site-url: https://dhsi-2024.netlify.app/
   repo-url: https://github.com/ComputeCanada/dhsi_2024
   page-navigation: true
@@ -23,7 +23,7 @@ website:
         target: _blank
   navbar:
     background: light
-    logo: /img/dhsi_logo.png
+    logo: /img/logo_dhsi.png
     logo-alt: "DHSI logo"
     title: false
     left:
