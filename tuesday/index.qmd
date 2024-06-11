@@ -25,3 +25,5 @@ Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for thi
 :::
 
 Please find the morning notes [here](https://docs.google.com/document/d/1G681nImRAmsbGPk9wcEw8GXhtUCuhEJ6AFDLUQnHp7U/edit#heading=h.otzzrvof7ze1).
+
+For the afternoon, the notes are [here](https://mint.westdri.ca/python/intro_text).
