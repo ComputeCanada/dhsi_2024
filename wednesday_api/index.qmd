@@ -23,3 +23,5 @@ Meghan Landry (ACENET)
 Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for this course to share notes or communicate among each other. It is entirely for you, so you can use it however you want.
 
 :::
+
+Please find the lecture notes [here](https://docs.google.com/document/d/1CffVq_FCcMaOpB2G80MupYLbh27knSgGXs5vKMEeUP0/edit#heading=h.33yco2yjpf6z).
