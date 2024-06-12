@@ -23,3 +23,7 @@ Marie-Hélène Burle (Simon Fraser University)
 Feel free to use the [etherpad](https://etherpad.wikimedia.org/p/dhsi24) for this course to share notes or communicate among each other. It is entirely for you, so you can use it however you want.
 
 :::
+
+First, we will finish playing with strings, so we will use [these notes](https://mint.westdri.ca/python/intro_text) again.
+
+Then I will show you a little demo of [web scraping with Python](https://mint.westdri.ca/python/ws_webscraping).
